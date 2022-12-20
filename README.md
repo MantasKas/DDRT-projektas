@@ -1,7 +1,6 @@
 # DDRT projektas
 
 # Projekto struktūra
-    ├───1-data
     ├───2-report
     ├───3-R
     ├───4-model

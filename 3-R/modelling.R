@@ -74,7 +74,7 @@ predictions %>%
 perf_valid2 <- h2o.performance(model_gbm2, valid = TRUE)
 h2o.auc(perf_valid2)
 
-h2o.performance(model_gbm2, newdata = test)
+plot(perf_valid2, type = "roc")
 
 h2o.saveModel(model_gbm2, "C:/Users/Mantas/Downloads/", filename = "my_model_gbm2")
 
